@@ -1,38 +1,90 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --white: white;
+  --yellow: yellow;
+  --black: black;
+}
+body{
+    background-color: var(--white);
+}
+.header{
+    font-size: 25px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, var(--yellow), var(--black) );
+    height: 150px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+.local_Card {
+  margin: 7px;
+  display: block;
+  gap: 10px;
+}
+
+.local_card_img {
+  width: 210px;
+  height: 230px;
+}
+.country {
+  display: block;
   text-align: center;
+  font-size: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.description {
+  font-size: 17px;
+  background-color: lightgray;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.read_more_btn {
+  border: none;
+  border-bottom: 4px solid lightgray;
+  background-color: var(--white);
+}
+.date {
+  font-size: 13px;
+}
+.on {
+  font-size: 15px;
+}
+.type {
+  font-size: 20px;
+}
+.cards-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+}
+.international_card {
+  margin: 20px 10px;
+}
+.international_card_img {
+  width: 350px;
+  height: 230px;
+}
+.footer{
+    padding-top: 30px;
+    background-image: linear-gradient(to bottom right, var(--black), var(--yellow) );
+    padding-bottom: 30px;
+}
+.footer_section_one {
+    margin: 10px;
+}
+.group_img{
+    width: 350px;
+}
+.footer_section_two {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icon{
+    text-decoration: none;
+    color: var(--white);
 }
