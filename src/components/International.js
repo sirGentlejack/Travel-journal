@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 const description = {
   webkitLineClamp: "4",
@@ -10,8 +10,6 @@ const description = {
 
 export default function International(props) {
   const [isOpen, setIsOpen] = useState(false);
-
-  const [showReadMoreButton, setShowReadMoreButton] = useState(false);
 
   return (
     <div className="international_card">

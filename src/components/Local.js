@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 const description = {
   webkitLineClamp: "3",
@@ -11,18 +11,6 @@ const description = {
 export default function Local(props) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [showReadMoreButton, setShowReadMoreButton] = useState(false);
-
-  // const ref = useRef(null);
-
-  // useEffect(() => {
-  //   if (ref.current) {
-  //     // console.log(ref.current.scrollHeight, ref.current.clientHeight);
-  //     setShowReadMoreButton(
-  //       // ref.current.scrollHeight !== ref.current.clientHeight
-  //     );
-  //   }
-  // });
 
   return (
     <div className="local_Card">
@@ -40,12 +28,10 @@ export default function Local(props) {
           <h4 className="title">{props.item.title}</h4>
           <p
             style={isOpen ? null : description}
-            // ref={ref}
             className="description"
           >
             {props.item.description}
           </p>
-          {/* {showReadMoreButton && (  )} */}
           <button onClick={() => setIsOpen(!isOpen)} className="read_more_btn">
             {isOpen ? "Read less" : "Read more..."}
           </button>
